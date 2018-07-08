@@ -217,6 +217,7 @@ class PianoteqHandler(ZynthianConfigHandler):
 			# Save envars
 			config = {
 				"PIANOTEQ_VERSION": [str(info['version'])],
+				"PIANOTEQ_STAGE": [str(info['stage'])],
 				"PIANOTEQ_TRIAL": [str(info['trial'])]
 			}
 			errors=self.update_config(config)
